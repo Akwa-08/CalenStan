@@ -1,0 +1,154 @@
+
+.MyCalendar {
+    flex-basis: 75%;
+
+}
+
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+    font-weight: 500;
+}
+.calendar-year {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 5rem;
+    padding: 0 3em;
+}
+
+.calendar-year h2 {
+    letter-spacing: .2em;
+    font-weight: unset;
+    align-self: center;
+}
+
+.calendar-year i {
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    border-radius: 50%;
+    transition-duration: 100ms;
+    cursor: pointer;
+    align-self: center;
+}
+
+.calendar-year i:hover {
+    background-color: rgb(129, 42, 201);
+    color: white;
+}
+
+.calendar-months {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.calendar-months button {
+    width: calc(100%/12);
+    max-width: calc(100%/12);
+    background-color: transparent;
+    transition-duration: 100ms;
+    color: rgb(161, 161, 161);
+}
+
+.calendar-months button:hover {
+    font-size: 2em;
+    color: black;
+}
+
+.calendar-months .selected {
+    font-size: 2em;
+    color: black;
+}
+
+.calendar-weekdays {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.calendar-weekdays div {
+    width: calc(100%/7);
+    max-width: calc(100%/7);
+}
+
+.calendar-days {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.calendar-days div {
+    width: calc(100%/7);
+    max-width: calc(100%/7);
+    height: 4.5rem;
+}
+
+.calendar-days div > .hidden {
+    color:rgb(161, 161, 161);
+}
+
+.calendar-days div > .hidden:hover {
+    color:white;
+}
+
+.calendar-days div > .selected {
+    background-color: #0d6efd;
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.719);
+}
+
+.calendar-days div button:hover {
+    border: 2px solid rgba(0, 0, 0, 0.76);
+}
+
+.calendar-days div > .reminder {
+    color: white;
+    transition-duration:0ms;
+    font-weight:500;
+}
+
+.unfinished {
+    background-color: rgb(221, 85, 108) !important;
+    
+}
+
+.ongoing {
+    background-color: rgb(74, 165, 74) !important;
+}
+
+.finished {
+    background-color: rgb(56, 54, 54) !important;
+}
+
+.selected2{
+    background-color: #0d6efd !important;
+}
+
+
+.reminder.hidden {
+    opacity: 0.25;
+}
+
+.color-code {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.label-color {
+    text-align: start;
+}
+
+.calendar-days div > button {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: none;
+    color: black;
+}

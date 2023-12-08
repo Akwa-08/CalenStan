@@ -1,0 +1,39 @@
+.Navbar {
+    padding: 10px 0 10px 50px;
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px rgb(196, 196, 196) solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.Navbar__btn {
+    background-color: rgb(224, 50, 26);
+    border: 1px solid rgba(160, 142, 142, 0);
+    border-radius: 8px;
+    color: white;
+    padding: 15px;
+    width:200px;
+}
+
+.Navbar__btn:hover {
+    background-color: rgb(241, 11, 11);
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.Navbar--left {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-container {
+    margin: auto;
+}
+
+img {
+    height: 90px;
+    width: auto;
+}

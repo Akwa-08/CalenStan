@@ -1,0 +1,114 @@
+.Reminder {
+    padding:1em;
+    text-align: center;
+    background-color: rgb(129, 42, 201);
+    flex-basis: 25%;
+    text-align: left;
+}
+
+.Reminder > h1, h3, h4, img {
+  color: white;
+}
+
+.reminder-info-heading {
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.reminderInput {
+    outline: 0;
+    width: 230px;
+    border-width: 0 0 3px;
+    border-color: white;
+    background:transparent;
+    color:white;
+    margin-right:10px;
+}
+  
+.reminderInput::placeholder{
+      color:white;
+      opacity:.5;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(187, 178, 178, 0); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(136, 136, 136); 
+}
+
+.reminder-cont{
+  height: 310px;
+  overflow-y:auto;
+  width: 100%;
+  background-color: white;
+  margin-bottom:8px;
+  overflow-x: hidden;
+  overflow-y:visible;
+}
+
+.reminder-header-box {
+  padding: 8px 16px;
+  display: flex;
+  background-color: white;
+  border-bottom:solid 2px rgba(0, 0, 0, 0.082);
+}
+
+.reminder-header{
+  color:black;
+  font-size: 1.25em;
+  font-weight: 400;
+  margin:0;
+}
+
+.button-padding {
+  padding: 0.25em !important;
+}
+
+#reminder-list{
+  color:black;
+}
+
+button.accordion-button::after {
+  background-image: none !important;
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.avatar-btn{
+  border-radius: 50%;
+  border: 4px solid rgb(255,215,0);
+  cursor:pointer;
+}
+
+.soc-icon{
+  width:50px;
+  height:50px;
+  cursor:pointer;
+  right:0;
+  margin-left:5px;
+}
+
+.icon-con{
+  color:white;
+  display:inline-block;
+  margin-left:10px;
+  font-size:40px;
+  cursor: pointer;
+}
