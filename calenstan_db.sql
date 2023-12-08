@@ -57,8 +57,31 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `firstname`, `lastname`, `email`, `password`, `icon`) VALUES
-(1, 'Vinceade', 'Centino', 'vinceade@gmail.com', 'vinceade', 'icon7'),
-(2, 'user', 'user', 'user@gmail.com', 'user', 'icon1');
+(1, 'John', 'Doe', 'user@gmail.com', 'user', 'icon1');
+
+--
+-- Dumping data for table 'reminders'
+--
+
+INSERT INTO reminders (event_date, event_name, description, time_start, time_end)
+VALUES
+  ('2023-10-27', 'Dentist Appointment', 'Have braces installed', '08:30:00', '10:30:00'),
+  ('2023-12-09', 'Contemplate Life Decisions', 'Pray to WebDev Gods', '07:30:00', '08:30:00'),
+  ('2023-12-09', 'Mourn Project Presentation', 'Offer braincells to bed', '17:30:00', '18:30:00'),
+  ('2023-12-10', 'Grind for Majors Again', 'Clutch the bagsak', '06:00:00', '21:00:00'),
+  ('2024-06-29', 'Birthday Incoming', 'Bake a cake', '08:00:00', '10:00:00'),
+  -- Generating 6 AI-generated events between October 27, 2023, and December 9, 2023
+  ('2023-11-01', 'Conference', 'Discuss AI technologies', '10:00:00', '12:00:00'),
+  ('2023-11-10', 'Workshop', 'Hands-on coding session', '14:00:00', '16:00:00'),
+  ('2023-11-20', 'Networking', 'Connect with professionals', '18:00:00', '20:00:00'),
+  ('2023-11-25', 'Webinar', 'Latest trends in AI', '12:00:00', '14:00:00'),
+  ('2023-12-01', 'Hackathon', 'Solve AI challenges', '09:00:00', '11:00:00'),
+  ('2023-12-05', 'Panel Discussion', 'Future of AI in industry', '16:00:00', '18:00:00'),
+  -- Generating 3 AI-generated events after December 9, 2023
+  ('2023-12-15', 'Seminar', 'Emerging AI applications', '08:00:00', '10:00:00'),
+  ('2023-12-20', 'Meetup', 'AI enthusiasts gathering', '14:00:00', '16:00:00'),
+  ('2023-12-25', 'Demo Day', 'Showcasing AI projects', '18:00:00', '20:00:00');
+
 
 --
 -- Indexes for dumped tables
