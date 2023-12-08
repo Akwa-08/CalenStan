@@ -5,7 +5,7 @@ const dbconn = mysql.createConnection({
     host        : 'localhost',
     user        : 'root',
     password    : '',
-    database    : 'reminders_db',
+    database    : 'calenstan_db',
     multipleStatements: true
 });
 dbconn.connect((err) => {
