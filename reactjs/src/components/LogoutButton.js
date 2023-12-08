@@ -2,6 +2,7 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import Axios from 'axios';
 
+
 function LogoutButton() {
     const navigate = useNavigate();
     Axios.defaults.withCredentials = true;
