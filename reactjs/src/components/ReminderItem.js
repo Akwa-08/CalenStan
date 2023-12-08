@@ -32,7 +32,6 @@ export default class ReminderItem extends Component {
         if(val){
           Axios.post(require("../config/reminder") + "/delete/" + this.reminder.rem_id).then(
             (res) => {
-              alert(res.data.message);
               this.props.load();
             }
           );

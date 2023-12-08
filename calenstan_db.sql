@@ -4,7 +4,7 @@ SET time_zone = "+00:00";
 
 
 -- Database: `calenstan_db`
-  CREATE DATABASE calenstan;
+  CREATE DATABASE calenstan_db;
 -- --------------------------------------------------------
 
 --

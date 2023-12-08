@@ -1,6 +1,7 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import Axios from 'axios';
+import './Navbar.css'
 
 
 function LogoutButton() {
@@ -11,14 +12,13 @@ function LogoutButton() {
         Axios
             .get(require("../config/logout"))
             .then((res) => {
-                alert(res.data);
                 navigate("/");
             })
     }
     
     return (
         <div className='LoginButton'>
-            <button onClick={logout} className='btn btn-primary btn-lg text-white'>LOGOUT</button>
+            <button onClick={logout} className='Navbar__btn'>LOGOUT</button>
         </div>
     )
 }

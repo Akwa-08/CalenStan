@@ -61,7 +61,6 @@ class ReminderModal extends Component {
         }
         Axios.post(require('../config/reminder'), data)
         .then((res) => {
-            alert(res.data.message);
             if(res.data.status === 200){
                 this.props.load();
             }
@@ -89,7 +88,6 @@ class ReminderModal extends Component {
         }
         Axios.post(require('../config/reminder') + `/${this.props.rem_id}`, data)
         .then((res) => {
-            alert(res.data.message);
             if(res.data.status === 200){
                 this.props.load();
             }
@@ -127,7 +125,7 @@ class ReminderModal extends Component {
                         </div>
                     </div>
                     <div className="flex-row mt-3">
-                        <button type="submit" className="btn btn-primary col">{this.mode}</button>
+                        <button type="submit" className="addbtn">{this.mode}</button>
                     </div>
                 </form>
             </div>

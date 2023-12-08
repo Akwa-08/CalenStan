@@ -132,7 +132,7 @@ class MyCalendar extends Component {
                     </div>
                     <div className="col-2 row">
                         <span className="color-code unfinished col-1"/>
-                        <label className="col label-color">- Unfinished</label>
+                        <label className="col label-color">- Upcoming</label>
                     </div>
                     <div className="col-2 row">
                         <span className="color-code ongoing col-1"/>

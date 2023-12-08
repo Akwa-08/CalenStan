@@ -79,7 +79,6 @@ export default class UserProfile extends Component {
             }
             Axios.post(require('../config/profile') + `/${this.props.userId}`, data)
             .then((res) => {
-                alert(res.data.message);
                 this.props.load();
             })
             .catch((err) => {

@@ -134,19 +134,7 @@ class Reminder extends Component {
           setShow={this.setShowUser}
           load={this.props.loadName}
         />
-        <center>
-          <div className="icon-con">
-            <i className="fab fa-facebook-square"></i>
-          </div>
-          <div className="icon-con">
-            <i className="fab fa-twitter-square"></i>
-          </div>
-          <div className="icon-con">
-            <i className="fab fa-linkedin-square"></i>   
-          </div>
-          <br/>
-          <small style={{color: "white"}}>&copy; Copyright 2021, Group 3</small>
-        </center>
+        
       </div>
     );
   }

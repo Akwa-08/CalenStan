@@ -46,7 +46,7 @@ const LoginSignup = ({mode, setMode}) => {
           msg = res.valid ?
             `Welcome back ${data.firstname}` :
             `Invalid email or password.`;
-          alert(msg);
+          
           setLoggedIn(true);
         }
       })

@@ -11,14 +11,14 @@ function AccountSetup() {
   const changeToSignup = () => setMode("signup");
 
   return (
-    <div>
+    <div className="container">
       <main className="accsetup">
         <Text />
         <section className="ls-cont">
-          <ButtonLS mode={mode} changeToLogin={changeToLogin} changeToSignup = {changeToSignup} />
+          <ButtonLS mode={mode} changeToLogin={changeToLogin} changeToSignup={changeToSignup} />
           <LoginSignup mode={mode} setMode={setMode} />
         </section>
-      </main> 
+      </main>
     </div>
   );
 }

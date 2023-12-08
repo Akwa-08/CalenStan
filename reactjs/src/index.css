@@ -1,45 +1,38 @@
-@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
-
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-button {
-  border: none;
-}
-
-button:hover {
-  cursor: pointer;
+html, body {
+  height: 100%;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 /* LOGIN & REGISTRATION */
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -71,28 +64,28 @@ ul {
 }
 
 .fa-check-square {
-  color: green;
+  color: white;
   margin-right: 7.5px;
 }
 
 .accsetup {
-  background: url("./img/bg.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 42.5%;
   display: flex;
-  height: 480px;
-  gap: 20%;
-  margin-top: 90px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   padding: 0 10%;
+  color: white;
 }
 
 .text {
-  z-index: 10;
+  flex: 1;
+  text-align: center;
+  padding: 50px;
 }
 
 .text h1 {
   margin-bottom: 30px;
+  color: white;
 }
 
 .text ul {
@@ -105,25 +98,22 @@ ul {
 
 .text li {
   margin-bottom: 20px;
+  color: white;
 }
 
 .ls-cont {
-  background-color: rgb(43, 156, 187);
+  background-color: white;
   border: 1px solid black;
   padding: 35px;
-  align-self: flex-start;
   width: 510px;
   z-index: 10;
+  flex: 1;
+  margin-top: 30px;
 }
 
 .ls-cont form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -136,15 +126,15 @@ ul {
 }
 
 .ls-cont form button {
-  background-color: #F0A993;
-  border: 1px solid #F0A993;
-  color: black;
+  background-color: #00226F;
+  border: 1px solid #00226F;
+  color: white;
 }
 
 .ls-cont form button:hover {
   background-color: white;
-  border: 1px solid #F0A993;
-  color: black;
+  border: 1px solid #00226F;
+  color: #00226F;
 }
 
 .ls-cont form button {
@@ -153,14 +143,10 @@ ul {
 }
 
 .ls-cont__btn {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .btn-ls {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
 }
@@ -172,16 +158,24 @@ ul {
   padding: 20px 10px;
   text-transform: uppercase;
   width: 100%;
+  margin-right: 10px; 
+  color: #00226F;
 }
 
 .btn-ls .btn-ls--focus {
-  background-color: #F0A993;
+  background-color: #00226F;
+  color: white;
 }
 
-/* LOGIN & REGISTRATION */
+@media (max-width: 768px) {
+  .accsetup {
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* CALENDAR COMPONENT */
-
-/*idk why but i can't delete my component css files with references*/
-
-/* CALENDAR COMPONENT */
+  .text,
+  .ls-cont {
+    width: 100%;
+    max-width: 500px;
+  }
+}

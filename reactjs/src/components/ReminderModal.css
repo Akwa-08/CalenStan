@@ -1,60 +1,90 @@
-.container-modal{ 
-    position:fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%); 
-    border: 1px rgb(78, 78, 78) solid;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  
-  .container-modal, .container-modal-fluid, .container-modal-lg, .container-modal-md, .container-modal-sm, .container-modal-xl, .container-modal-xxl {
-    width: 30%!important; 
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .container-modal{
-    display:none;
-    min-width: 500px;
-    padding:4em;
-    background-color:white;
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.25);
-    z-index:10;
-  }
-  
-  .container-modal .close{
-    border:none;
-    background:none;
-    font-weight:600;
-    position: absolute;
-    right:5.8%;
-    top:2%;
-    cursor:pointer;
-  }
-  
-  .container-modal .text{
-    
-    font-size:35px;
-    font-weight:600;
-    text-align:center;
-  }
-  
-  .container-modal form .data, .container-modal form .data-time{
-    top:50%;
-    left:50%;
-    transform: translate(15%,-50%); 
-    height: 40px;
-    width:80%;
-    margin: 40px 0;
-  }
+.container-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  padding: 2em;
+  background-color: white;
+  border: 1px solid #00226F;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
 
-  .button-form {
-    margin-left: auto;
-  }
+.container-modal .close {
+  border: none;
+  background: none;
+  font-weight: 600;
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  cursor: pointer;
+  color: #00226F;
+}
 
-  .flex-row {
-    display: flex;
+.container-modal .text {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #00226F;
+  padding: 20px;
+}
+
+.container-modal form .data,
+.container-modal form .data-time {
+  margin: 20px 0;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #00226F;
+  border-radius: 5px;
+}
+
+.button-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-form button {
+  background-color: #00226F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button-form button:hover {
+  background-color: #001a54;
+}
+
+.addbtn {
+  background-color: #00226F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.addbtn:hover {
+  background-color: #001a54;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .container-modal {
+    width: 90%;
   }
+}
